@@ -10,9 +10,8 @@
 
     <!--Description-->
     
-        <meta name="description" content="It’s that time of year again.
-Kids are out shopping in preparation for the new school year after a good long summer break.
-Flashy notebooks, the most ">
+        <meta name="description" content="Let’s get this blog rolling with its first actual post.
+I first learned Java in our Intro to CS course and I have been stuck with it in school until r">
     
 
     <!--Author-->
@@ -22,7 +21,7 @@ Flashy notebooks, the most ">
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="An Introduction Of Sorts"/>
+        <meta property="og:title" content="Java As A First Language Is A Bad Idea"/>
     
 
     <!--Open Graph Description-->
@@ -44,7 +43,7 @@ Flashy notebooks, the most ">
 
     <!-- Title -->
     
-    <title>An Introduction Of Sorts - CS and Other Adventures</title>
+    <title>Java As A First Language Is A Bad Idea - CS and Other Adventures</title>
 
     <!-- Tachyons Core CSS -->
     <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
@@ -113,14 +112,14 @@ Flashy notebooks, the most ">
     <!-- Title -->
     <div class="w-100 mw8 center vh-40 dt">
         <div class="dtc v-mid white">
-            <h1 class="f1-l f2-m tc tc-m tl-ns">An Introduction Of Sorts</h1>
-            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2017-08-20</p>
+            <h1 class="f1-l f2-m tc tc-m tl-ns">Java As A First Language Is A Bad Idea</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2017-09-02</p>
         </div>
     </div>
 
     <!-- Icon -->
     <div class="relative w-100 mw8 center white dn dn-m db-ns">
-        <i class="header-icon fa fa-handshake-o"></i>
+        <i class="header-icon fa fa-times-circle"></i>
     </div>
 </div>
 
@@ -134,16 +133,24 @@ Flashy notebooks, the most ">
                     
 
                     <!-- Main Post Content -->
-                    <p>It’s that time of year again.</p>
-<p>Kids are out shopping in preparation for the new school year after a good long summer break.</p>
-<p>Flashy notebooks, the most high-tech calculators, shiny new stationery.</p>
-<p>As a college student, I don’t need any of that. All I seem to need is a few notebooks from the discount bin at the supermarket, a couple of pen and pencils, and my laptop.</p>
-<p>With the new semester coming around the corner, instead of preparing for classes the next day, I’m here starting up this blog. If you happen to come across this blog, I’m sure you’re wondering at least two things by now: who are you, and why are you blogging? Good questions.</p>
-<p>My name is Christopher Tse, though more often than not I go by Chris. I’m currently in my senior year at the University of Oklahoma finishing up my bachelor’s degree in Computer Science. Before settling on this degree I hopped around a bit between Electrical Engineering and Computer Engineering before deciding finally on Computer Science. Circuits and electronics engineering aren’t really for me, so I went the route where I could work with code more and learn more about programming.</p>
-<p>As for why I decided to start this blog, I frankly don’t have a concrete answer for that yet. I’ve heard a lot of things about having an online presence through blog writing and having potential employers looking up applicants online, but I don’t really think one should blog just for that reason alone.</p>
-<p>Just like how you would record your feelings and experiences in a daily journal or diary, I feel like I want to achieve something similar with this blog. In the last few semesters of my degree, I’m sure I will be going over a lot of CS and software engineering concepts. Having a place to write about and explore any topics or concepts I find interesting seems like a good way to stay engaged with the content while could also count as studying. I also have a few topics unrelated to school which I’d like to write about as well.</p>
-<p>Hopefully, I will be able to keep this going and stay committed to writing maybe around twice a month. I’m not used to writing a blog so weekly posts seem a bit on the heavy side for now. We’ll just have to see what happens.</p>
-<p>That’s all from me for this “introduction” post. I’m actually a little excited to see what kind of topics I’ll be able to come up with. And to any students out there: have fun back at school!</p>
+                    <p>Let’s get this blog rolling with its first actual post.</p>
+<p>I first learned Java in our Intro to CS course and I have been stuck with it in school until recently in my junior year courses. I didn’t really think much of it at the time. Since then I’ve taken up several different languages either for work out of personal interest, and I’ve now developed a certain love-hate relationship with Java.</p>
+<h4 id="Caution-Opinions-Ahead"><a href="#Caution-Opinions-Ahead" class="headerlink" title="Caution: Opinions Ahead"></a>Caution: Opinions Ahead</h4><p>The basics of the language are easy enough to learn for a beginner, is cross platform so students can use it regardless of platform, and the Java API has many features implemented for use out of the box. Despite all this, I believe that there are better choices out there for an Intro to CS course. Let’s take a look at a few reasons why this is. And to be clear, this is all in my opinion.</p>
+<h4 id="Java-is-too-verbose"><a href="#Java-is-too-verbose" class="headerlink" title="Java is too verbose"></a>Java is too verbose</h4><p>This is a simple “Hello world” program in Java, with conservative spacing:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</div><div class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">       System.out.println(<span class="string">"Hello world!"</span>);</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>About three lines filled with a lot of technical jargon. Compared to Python:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">print(<span class="string">"Hello world!"</span>)</div></pre></td></tr></table></figure>
+<p>Wow, much shorter. And you only need to type what you mean. Literally, <code>print</code> the words “Hello world!” to the screen. Back when I was still a beginner, I know for sure which one I would have found less intimidating.</p>
+<p>However, the length itself isn’t really the issue as much as the amount of keywords involved.</p>
+<h4 id="Java-is-too-technically-verbose"><a href="#Java-is-too-technically-verbose" class="headerlink" title="Java is too technically verbose"></a>Java is too <em>technically</em> verbose</h4><p>When a beginner picks up Java, they inevitably ask at the beginning: “What is a class?”, “What does <code>public</code> mean?”, “What is <code>static</code>?”, and the list goes on.</p>
+<p>Professors explain this by saying “You’ll learn this later.” And I don’t really blame teachers for that, since they don’t really have a choice. You can’t explain what a <code>class</code> is until they know what object oriented programming is. And you can’t teach what <code>public</code> means until they understand scoping. By contrast, the Python example contains just one keyword, and it’s much easier to explain what it does, and is quite intuitive, as is the rest of the language.</p>
+<p>In my class, the professor literally referred to  <code>public static void main(String[] args)</code> as the “black magic incantation” that would make our programs run. Oh, and she also made us chant it in unison. Great way to learn programming, right?</p>
+<h4 id="Not-high-level-yet-not-low-level"><a href="#Not-high-level-yet-not-low-level" class="headerlink" title="Not high level, yet not low level"></a>Not high level, yet not low level</h4><p>Java is considered a high level language, but it’s definitely less abstracted unlike Python or JavaScript. It also isn’t as low level as C or Rust where you deal with manual memory management. I think that starting with Java results in the inability to paint a full picture of how the computer works</p>
+<p>In my opinion, I also believe that when learning programming, one should generally start from one end of the high/low level spectrum and slowly move to the other end.</p>
+<p>On one hand, we could start with a scripting language with many features like Python or JavaScript. Once they’ve gotten the basics of programming down such as variables, conditionals, and loops, then we can move onto Java and introduce more strict C-like syntax with strong typing. Finally, move onto C/C++, demonstrating how the conveniences in Python and Java were actually abstracted away, showing how to allocate memory.</p>
+<p>Or we could go the other way around. Start with the bare metal and basic memory management. Once they have been thoroughly annoyed by all the work involved in something as simple as expanding an array, then we can move up to something like Java. It’s a little less work now, still with similar syntax but a lot less memory management. Finally, introduce the concept of scripting and functional languages and loosely typed languages.</p>
+<p>By traveling the entire spectrum, the student gets a chance to get a more complete view of programming. They understand the low level concepts of memory and pointers, but also understand that there are higher level languages that abstract those things away for easier development of applications that don’t require that degree of memory management.</p>
+<p>These were some reasons why I don’t think we should be teaching Java as what might be the very first programming language for some people. While it’s a language with it’s strong suits I find that there are better ways to introduce programming and CS concepts than sticking with Java for your first two years of college. Let me know in the comments what kind of</p>
 
 
                     <!-- Tags Bottom -->
@@ -183,7 +190,11 @@ Flashy notebooks, the most ">
     <h3>Categories</h3>
     
         <p>
-            <a href="/blog/categories/General/">General</a>
+            <a href="/blog/categories/Programming/">Programming</a>
+        </p>
+    
+        <p>
+            <a href="/blog/categories/Programming/Computer-Science/">Computer Science</a>
         </p>
     
 </div>
