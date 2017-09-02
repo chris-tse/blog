@@ -3,12 +3,17 @@
 
     <sitemap>
         <loc>https://chris-tse.com/blog/post-sitemap.xml</loc>
-        <lastmod>2017-09-02T10:24:34.000Z</lastmod>
+        <lastmod>2017-09-02T10:35:24.000Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>https://chris-tse.com/blog/category-sitemap.xml</loc>
         <lastmod>2017-09-02T08:20:29.000Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://chris-tse.com/blog/tag-sitemap.xml</loc>
+        
     </sitemap>
 
 </sitemapindex>
