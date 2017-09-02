@@ -2,18 +2,271 @@
 <html lang="en">
 
 <!-- Head tag -->
-<%- partial('_partial/head') %>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="Let’s get this blog rolling with its first actual post.
+I first learned Java in our Intro to CS course and I have been stuck with it in school until r">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Chris Tse">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Java As A First Language Is A Bad Idea"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="CS and Other Adventures"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>Java As A First Language Is A Bad Idea - CS and Other Adventures</title>
+
+    <!-- Tachyons Core CSS -->
+    <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/blog/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
 
 <body>
 
 <!-- Main Content -->
-<%- body %>
+<!-- Banner -->
+<!-- Banner -->
+<div class="w-100 bg-1 ph5-ns ph3 text-light">
+
+    <nav class="db dt-l w-100 mw8 center border-box pv3">
+        <a class="db dtc-l v-mid link dim w-100 w-25-l tc tl-l mb2 mb0-l white" href="/blog/" title="CS and Other Adventures">
+            <h1 class="dib h3">Chris Tse</h1>
+            <!-- <img src="http://www.codeblocq.com/assets/projects/hexo-theme-anodyne/assets/anodyne.svg" class="dib h3" alt="CS and Other Adventures"> -->
+        </a>
+        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white"
+                    href="https://chris-tse.com"
+                    title="Home">
+                    Home
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white"
+                    href="/blog/"
+                    title="Blog">
+                    Blog
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white"
+                    href="/blog/archives"
+                    title="Archives">
+                    Archives
+                </a>
+            
+                <a class="link dim f6 f5-l dib mr3 mr4-l white"
+                    href="https://chris-tse.com"
+                    title="Projects">
+                    Projects
+                </a>
+            
+        </div>
+    </nav>
+
+    <!-- Title -->
+    <div class="w-100 mw8 center vh-40 dt">
+        <div class="dtc v-mid white">
+            <h1 class="f1-l f2-m tc tc-m tl-ns">Java As A First Language Is A Bad Idea</h1>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns">2017-09-02</p>
+        </div>
+    </div>
+
+    <!-- Icon -->
+    <div class="relative w-100 mw8 center white dn dn-m db-ns">
+        <i class="header-icon fa fa-times-circle"></i>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
+    <div class="content">
+        <div class="mw8 center">
+            <div class="cf">
+                <div class="fl w-100 w-70-l mw7 left fw3 lh-copy pr4-ns pr0-m post-content">
+                    <!-- Tags Vertical -->
+                    
+
+                    <!-- Main Post Content -->
+                    <p>Let’s get this blog rolling with its first actual post.</p>
+<p>I first learned Java in our Intro to CS course and I have been stuck with it in school until recently in my junior year courses. I didn’t really think much of it at the time. Since then I’ve taken up several different languages either for work out of personal interest, and I’ve now developed a certain love-hate relationship with Java.</p>
+<h4 id="Caution-Opinions-Ahead"><a href="#Caution-Opinions-Ahead" class="headerlink" title="Caution: Opinions Ahead"></a>Caution: Opinions Ahead</h4><p>The basics of the language are easy enough to learn for a beginner, is cross platform so students can use it regardless of the OS on their personal machines, and the Java API has many useful classes and features implemented for use out of the box. Despite all this, I believe that there are better choices out there for an Intro to CS course. Let’s take a look at a few reasons why I think this is.</p>
+<h4 id="Java-is-too-verbose"><a href="#Java-is-too-verbose" class="headerlink" title="Java is too verbose"></a>Java is too verbose</h4><p>This is a simple “Hello world” program in Java, with conservative spacing:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</div><div class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">       System.out.println(<span class="string">"Hello world!"</span>);</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>About three lines filled with a lot of technical jargon. Compared to Python:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">print(<span class="string">"Hello world!"</span>)</div></pre></td></tr></table></figure>
+<p>Wow, much shorter. And you only need to type what you mean. Literally, <code>print</code> the words “Hello world!” to the screen. Back when I was still a beginner, I know for sure which one I would have found less intimidating.</p>
+<p>However, the length itself isn’t really the issue as much as the amount of keywords involved.</p>
+<h4 id="Java-is-too-technically-verbose"><a href="#Java-is-too-technically-verbose" class="headerlink" title="Java is too technically verbose"></a>Java is too <em>technically</em> verbose</h4><p>When a beginner picks up Java, they inevitably ask at the beginning: “What is a class?”, “What does <code>public</code> mean?”, “What is <code>static</code>?”, and the list goes on.</p>
+<p>Professors explain this by saying “You’ll learn this later.” And I don’t really blame teachers for that, since they don’t really have a choice. You can’t explain what a <code>class</code> is until they know what object oriented programming is. And you can’t teach what <code>public</code> means until they understand scoping. By contrast, the Python example contains just one keyword, and it’s much easier to explain what it does, and is quite intuitive, as is the rest of the language.</p>
+<p>In my class, the professor literally referred to  <code>public static void main(String[] args)</code> as the “black magic incantation” that would make our programs run. Oh, and she also made us chant it in unison. Great way to learn programming, right?</p>
+<h4 id="Not-high-level-yet-not-low-level"><a href="#Not-high-level-yet-not-low-level" class="headerlink" title="Not high level, yet not low level"></a>Not high level, yet not low level</h4><p>Java is considered a high level language, but it’s definitely less abstracted unlike Python or JavaScript. It also isn’t as low level as C or Rust where you deal with manual memory management. I think that starting with Java results in the inability to paint a full picture of how the computer works. I believe that when learning programming, one should start from one end of the high/low level spectrum and slowly move to the other end.</p>
+<p>On one hand, we could start with a scripting language with many features like Python or JavaScript. Once they’ve gotten the basics of programming down such as variables, conditionals, and loops, then we can move onto Java and introduce more strict C-like syntax with strong typing. Finally, move onto C/C++, demonstrating how the conveniences in Python and Java were actually abstracted away, showing how to allocate memory.</p>
+<p>Or we could go the other way around. Start with the bare metal and basic memory management. Once they have been thoroughly annoyed by all the work involved in something as simple as expanding an array, then we can move up to something like Java. It’s a little less work now, still with similar syntax but a lot less memory management. Finally, introduce the concept of scripting and functional languages and loosely typed languages.</p>
+<p>By traveling the entire spectrum, the student gets a chance to get a more complete view of programming. They understand the low level concepts of memory and pointers, but also understand that there are higher level languages that abstract those things away for easier development of applications that don’t require that degree of memory management.</p>
+<h4 id="In-the-end-the-choice-isn’t-mine"><a href="#In-the-end-the-choice-isn’t-mine" class="headerlink" title="In the end, the choice isn’t mine"></a>In the end, the choice isn’t mine</h4><p>These were some reasons why I don’t think we should be teaching Java as what might be the very first programming language for some people. While it’s a language with it’s strong suits I find that there are better ways to introduce programming and CS concepts than sticking with Java for your first two years of college. Let me know in the comments what programming languages you think are a good idea to start with.</p>
+
+
+                    <!-- Tags Bottom -->
+                    
+
+                    <!-- Comments -->
+                    
+<div id="disqus_thread" class="mt5">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+
+
+                </div>
+                <div class="fl w-100 w-30-l center fw3 lh-copy pl4-ns tl black-50">
+
+                    <hr class="dn-l mw4 black-50 mt5" />
+
+                    <!-- Widget 1: About -->
+                    <div class="mt5 mt0-l">
+    <article class="dt db-l mw8 mw8-m mw5-ns center ml0-l bg-white mv3">
+        <div class="dn dtc-m db-l v-mid tc pr4 pr0-l" style="min-width: 6rem;">
+            <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAn6AAAAJDE2MDFmOTE4LTRlOTItNDliOC1iZDEzLWRhYWZkZjViYjM3Mg.jpg" class="mb4-l br-100 h3 w3 h4-l w4-l dib" title="Chris Tse">
+        </div>
+        <div class="dtc db-l v-mid lh-copy measure center f6 black-50 tj">
+            My name is Christopher Tse.<br>I am a Computer Science student at the University of Oklahoma and a developer with preference for JavaScript.
+        </div>
+    </article>
+</div>
+
+                    <hr class="dn-l mw4 black-50 mt5" />
+
+                    <!-- Widget 2: Categories -->
+                    
+                        <div class="mt5 tc tl-l">
+    <h3>Categories</h3>
+    
+        <p>
+            <a href="/blog/categories/Programming/">Programming</a>
+        </p>
+    
+        <p>
+            <a href="/blog/categories/Programming/Computer-Science/">Computer Science</a>
+        </p>
+    
+</div>
+
+
+                        <hr class="dn-l mw4 black-50 mt5" />
+                    
+
+                    <!-- Widget 3: Recent Posts -->
+                    <div class="mt5 tc tl-l">
+    <h3>Recent Posts</h3>
+    
+        <p>
+            <a href="/blog/Java-As-A-First-Language-Is-A-Bad-Idea/">Java As A First Language Is A Bad Idea</a>
+        </p>
+    
+        <p>
+            <a href="/blog/An-Introduction-Of-Sorts/">An Introduction Of Sorts</a>
+        </p>
+    
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Footer -->
-<%- partial('_partial/footer') %>
+<div class="bg-1 ph2 ph5-ns pv5">
+        <div class="mv8">
+            <div class="center tc">
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://twitter.com/ChrisMTse" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="https://github.com/christopher-tse" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+                
+                    <div class="dib mh3">
+                        <a class="f3 f2-ns white dim" href="mailto:chris@chris-tse.com" target="_blank">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                
+            </div>
+            <div class="f6 f5-ns center tc white pt5 fw3">
+                All rights reserved | Design & Hexo <a class="link dim white" href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+            </div>
+        </div>
+    </div>
 
 <!-- After Footer -->
-<%- partial('_partial/after-footer') %>
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'christseblog';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
 <script src="https://www.w3counter.com/tracker.js?id=112699"></script>
 </body>
 
