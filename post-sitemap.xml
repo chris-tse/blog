@@ -7,8 +7,16 @@
     </url>
 
     <url>
+        <loc>https://chris-tse.com/blog/Don-t-Learn-Programming-Languages-Learn-Programming/</loc>
+        <lastmod>2017-09-16T10:11:33.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://chris-tse.com/blog/Java-As-A-First-Language-Is-A-Bad-Idea/</loc>
-        <lastmod>2017-09-03T02:30:07.000Z</lastmod>
+        <lastmod>2017-09-03T02:31:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
