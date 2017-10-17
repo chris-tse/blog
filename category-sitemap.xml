@@ -14,20 +14,6 @@
     </url>
 
     <url>
-        <loc>https://chris-tse.com/blog/categories/Programming/</loc>
-        <lastmod>2017-09-18T05:52:45.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://chris-tse.com/blog/categories/Programming/Programming-Languages/</loc>
-        <lastmod>2017-09-18T05:52:45.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://chris-tse.com/blog/categories/Software-Engineering/</loc>
         <lastmod>2017-09-30T07:56:56.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -37,6 +23,20 @@
     <url>
         <loc>https://chris-tse.com/blog/categories/Software-Engineering/Capstone/</loc>
         <lastmod>2017-09-30T07:56:56.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chris-tse.com/blog/categories/Programming/</loc>
+        <lastmod>2017-10-17T09:20:02.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://chris-tse.com/blog/categories/Programming/Programming-Languages/</loc>
+        <lastmod>2017-10-17T09:20:02.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
